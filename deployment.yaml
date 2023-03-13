@@ -28,11 +28,11 @@ kind: Service
 metadata:
   name: lb-service
   labels:
-    app: lb-service
+    app: flaskdemo
 spec:
   type: LoadBalancer
   ports:
-  - port: 80
-    targetPort: 5000
+  - port: 8000
+    targetPort: 8000
   selector:
     app: flaskdemo
